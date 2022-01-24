@@ -137,10 +137,10 @@ namespace NummersTest
             Assert.AreEqual(true, hasProp, "Geen property Getal2 gevonden");
 
             var isInt = r.GetType().GetProperty("Getal2").GetMethod.ReturnType;
-            Assert.AreEqual(typeof(Int32), isInt, "Property Getalé niet van int type");
+            Assert.AreEqual(typeof(Int32), isInt, "Property Getal2 niet van int type");
 
             var isAutoProp = IsAutoProp(r.GetType().GetProperty("Getal2"));
-            Assert.AreEqual(isAutoProp, true, "Property Getalé geen autoprop.");
+            Assert.AreEqual(isAutoProp, true, "Property Getal2 geen autoprop.");
         }
         // Bron: https://stackoverflow.com/questions/2210309/how-to-find-out-if-a-property-is-an-auto-implemented-property-with-reflection
         public bool IsAutoProp(PropertyInfo info)
