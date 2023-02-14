@@ -88,7 +88,7 @@ namespace NummersTest
                     Console.SetOut(sw);
                     var res2 = quotMethod.Invoke(r, null);
                     Assert.AreEqual(res2, 0.0, "Ik deed deling door 0 maar kreeg niet 0 als resultaat terug.");
-                    Assert.AreEqual(sw.ToString().To.Lower(),Trim(), "kan niet delen door 0", "Deling door 0 moet de juiste foutboodschap tonen, namelijk \"kan niet delen door 0\"");
+                    Assert.AreEqual(sw.ToString().ToLower().Trim(), "kan niet delen door 0", "Deling door 0 moet de juiste foutboodschap tonen, namelijk \"kan niet delen door 0\"");
                 }
                 
             }
