@@ -14,7 +14,7 @@ namespace NummersTest
         [TestMethod]
         public void TestSom()
         {
-            var r = new Nummers();
+            var r = new NummerBerekenaar();
             var sommethod = r.GetType().GetMethod("Som");
             if (sommethod != null)
             {
@@ -32,7 +32,7 @@ namespace NummersTest
         [TestMethod]
         public void TestVerschil()
         {
-            var r = new Nummers();
+            var r = new NummerBerekenaar();
             var sommethod = r.GetType().GetMethod("Verschil");
             if (sommethod != null)
             {
@@ -49,7 +49,7 @@ namespace NummersTest
         [TestMethod]
         public void TestProduct()
         {
-            var r = new Nummers();
+            var r = new NummerBerekenaar();
             var productMethode = r.GetType().GetMethod("Product");
             if (productMethode != null)
             {
@@ -67,7 +67,7 @@ namespace NummersTest
         [TestMethod]
         public void TestQuotient()
         {
-            var r = new Nummers();
+            var r = new NummerBerekenaar();
             var quotMethod = r.GetType().GetMethod("Quotient");
            
 
@@ -95,7 +95,7 @@ namespace NummersTest
             else Assert.Fail("Quotient methode niet gevonden.");
         }
 
-        private static void SetGetallen(Nummers r, int g1, int g2)
+        private static void SetGetallen(NummerBerekenaar r, int g1, int g2)
         {
             try
             {
@@ -115,7 +115,7 @@ namespace NummersTest
         public void PropGetal1Test()
         {
 
-            var r = new Nummers();
+            var r = new NummerBerekenaar();
 
             bool hasProp = r.GetType().GetProperty("Getal1") != null;
             Assert.AreEqual(true, hasProp, "Geen property Getal1 gevonden");
@@ -131,7 +131,7 @@ namespace NummersTest
         public void PropGetal2Test()
         {
 
-            var r = new Nummers();
+            var r = new NummerBerekenaar();
 
             bool hasProp = r.GetType().GetProperty("Getal2") != null;
             Assert.AreEqual(true, hasProp, "Geen property Getal2 gevonden");

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NummersApplicatie
 {
-    public class Nummers
+    public class NummerBerekenaar
     {
 
     }
